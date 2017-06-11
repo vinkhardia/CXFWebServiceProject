@@ -7,6 +7,8 @@ public class HelloClient {
 	
 	public static void main(String[] args) {
 		
+	
+		System.out.println("First Commit after checkout");
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(new String[] {"spring-config.xml"});
 		HelloWorld client = (HelloWorld)context.getBean("helloClient");
 		client.sayHi("World");
